@@ -1,5 +1,5 @@
 .fivescreen {
-  background-image: url(/build/img/shaslik.jpg);
+  background-image: url(./../img/shaslik.jpg);
   background-size: cover;
   background-position: top;
 }
@@ -15,7 +15,7 @@
     @extend %h2;
 
     &::after {
-      content: url(/build/img/decoration\ 4\ 2.png);
+      content: url(./../img/decoration\ 4\ 2.png);
       display: flex;
       justify-content: center;
       padding: 20px 0;

@@ -1,5 +1,5 @@
 .sixscreen {
-  background-image: url(/build/img/ssc.jpg), linear-gradient(100deg, #fffffff1, #f4f2f2);
+  background-image: url(./../img/ssc.jpg), linear-gradient(100deg, #fffffff1, #f4f2f2);
   background-blend-mode: overlay;
   background-size: cover;
 }
@@ -14,7 +14,7 @@
     color: $gorc;
 
     &::after {
-      content: url(img/decoration\ yel.png);
+      content: url(./../img/decoration\ yel.png);
       display: flex;
       justify-content: center;
     }

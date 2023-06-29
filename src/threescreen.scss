@@ -1,5 +1,5 @@
 .threescreen {
-  background-image: url(/build/img/threescreen.jpg);
+  background-image: url(./../img/threescreen.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -16,7 +16,7 @@
     margin: 100px 0 73px 0;
 
     &:after {
-      content: url(/build/img/decoration\ 4\ 2.png);
+      content: url(./../img/decoration\ 4\ 2.png);
       display: flex;
       justify-content: center;
     }
