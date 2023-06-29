@@ -1,0 +1,120 @@
+.sixscreen {
+  background-image: url(/build/img/ssc.jpg), linear-gradient(100deg, #fffffff1, #f4f2f2);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.wrapper__data {
+  padding: 100px 32px;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    @extend %h2;
+    color: $gorc;
+
+    &::after {
+      content: url(img/decoration\ yel.png);
+      display: flex;
+      justify-content: center;
+    }
+  }
+  P {
+    font: {
+      family: Lato, serif;
+      width: 400;
+      size: 16px;
+    }
+    line-height: 30px;
+    text-align: center;
+  }
+
+  form {
+    display: grid;
+
+    label {
+      margin-top: 21px;
+      font: {
+        family: Lato, serif;
+        width: 700;
+        size: 14px;
+      }
+      color: $gorc;
+    }
+
+    input {
+      padding: 7px;
+      font: {
+        family: Lato, serif;
+        style: italic;
+        size: 16px;
+      }
+      color: $silver;
+      &:hover {
+        border: 1px solid $gorc;
+      }
+    }
+  }
+}
+
+.data__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.knopka {
+  color: white;
+  background-color: $gorc;
+  padding: 15px;
+  font: {
+    size: 14px;
+    line-height: 25px;
+  }
+}
+
+.data__img {
+  display: none;
+  img {
+    width: 300px;
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .knopka {
+    width: 340px;
+    margin: 30px auto;
+  }
+  .data__img {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 75px;
+    margin: 70px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper__data {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .knopka {
+    width: 190px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .data__content {
+    padding: 0 40px;
+    p {
+      margin-top: 30px;
+    }
+  }
+}

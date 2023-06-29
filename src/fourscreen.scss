@@ -1,0 +1,113 @@
+.fourscreen {
+  background-image: url(/build/img/pattern.png);
+
+  background-color: rgba(255, 255, 255, 0.945);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.four {
+  padding: 100px 30px;
+}
+
+.dn {
+  display: none;
+}
+
+.wrapper__menu {
+  position: relative;
+  margin-top: 30px;
+
+  //   margin: 100px auto;
+  h2 {
+    font: {
+      family: Yeseva One;
+      width: 400;
+      size: 36px;
+      line-height: 42px;
+    }
+    text-align: center;
+    color: $gorc;
+    &::after {
+      content: url(/build/img/decoration\ yel.png);
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    right: 5px;
+  }
+
+  .text {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .yellow__text {
+    display: flex;
+    font: {
+      family: Yeseva One;
+      size: 21px;
+    }
+    line-height: 37px;
+    color: $gorc;
+    border-bottom: 1px solid $gorc;
+  }
+
+  .grey__text {
+    font: {
+      family: Lato, serif;
+      size: 16px;
+    }
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dn {
+    display: block;
+  }
+
+  .text {
+    padding: 10px 24px;
+    position: relative;
+  }
+  span {
+    margin-right: 20px;
+  }
+  .special {
+    border: 1px solid #c89f2d;
+  }
+  .special::before {
+    content: "Special";
+    color: $white;
+    padding: 2px 70px;
+    background-color: $gorc;
+    position: absolute;
+    top: -22px;
+    right: -1px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .four {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 170px;
+  }
+
+  .n {
+    display: none;
+  }
+
+  .dn {
+    order: 4;
+  }
+
+  .or {
+    order: 3;
+  }
+}

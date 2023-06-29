@@ -1,0 +1,57 @@
+.fivescreen {
+  background-image: url(/build/img/shaslik.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.five__window {
+  background-color: rgba(0, 0, 0, 0.801);
+  width: 90%;
+  color: $white;
+  margin: 100px auto;
+  padding: 67px 25px;
+
+  h2 {
+    @extend %h2;
+
+    &::after {
+      content: url(/build/img/decoration\ 4\ 2.png);
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+    }
+  }
+}
+
+.five__item {
+  font: {
+    family: Gentium Book Plus, serif;
+    width: 400;
+    size: 20px;
+  }
+  line-height: 36px;
+  text-align: center;
+}
+.five__item2 {
+  font: {
+    family: Lato, serif;
+    size: 20px;
+  }
+  line-height: 42px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .five__window {
+    margin: 120px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .five__window {
+    width: 850px;
+    height: 550px;
+    margin: 200px auto;
+  }
+}

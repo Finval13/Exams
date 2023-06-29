@@ -1,0 +1,73 @@
+.lastscreen {
+  background-color: #000000d5;
+}
+
+.last {
+  width: 90%;
+  display: grid;
+}
+
+.last__fragment {
+  padding: 100px 30px;
+  h2 {
+    font: {
+      family: Yeseva One, serif;
+      size: 21px;
+    }
+    text-align: center;
+
+    &:after {
+      content: url(/build/img/decoration\ 4\ 2.png);
+      margin: 25px 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  p {
+    margin-top: 10px;
+    font: {
+      family: Lato, serif;
+      size: 16px;
+    }
+    text-align: center;
+  }
+  color: $white;
+}
+.fragment__card {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+
+  img {
+    width: 53px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .last {
+    gap: 0;
+    padding: 100px 180px;
+  }
+  .last__fragment {
+    padding: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .last {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+  .last__fragment {
+    padding: 40px;
+  }
+  .o2 {
+    order: 2;
+  }
+  .dn {
+    order: 1;
+  }
+  .o3 {
+    order: 3;
+  }
+}

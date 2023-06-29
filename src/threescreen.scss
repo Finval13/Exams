@@ -1,0 +1,78 @@
+.threescreen {
+  background-image: url(/build/img/threescreen.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.threescreen__window {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 90%;
+  margin: 100px 30px;
+  padding: 40px;
+
+  h2 {
+    @extend %h2;
+    margin: 100px 0 73px 0;
+
+    &:after {
+      content: url(/build/img/decoration\ 4\ 2.png);
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  p {
+    font: {
+      family: lato, serif;
+      width: 400;
+      size: 16px;
+    }
+    line-height: 30px;
+    text-align: center;
+    color: $white;
+    margin-bottom: 73px;
+  }
+}
+
+.window__colo {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .threescreen__window {
+    padding: 49px 90px;
+
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      margin: 73px 0;
+    }
+  }
+
+  .window__colo {
+    img {
+      width: 115px;
+      height: 115px;
+    }
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .threescreen {
+    position: relative;
+  }
+
+  .threescreen__window {
+    width: 630px;
+    margin: 0;
+    position: absolute;
+    right: 80px;
+    top: 200px;
+  }
+}
